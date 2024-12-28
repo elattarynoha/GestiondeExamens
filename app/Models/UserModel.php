@@ -8,7 +8,11 @@ class UserModel extends Model{
 
  protected $table ='Users' ;
  protected $primarykey ='UserID';
+<<<<<<< HEAD
  protected $allowedfields = ['FirstName', 'LastName','Email','Password' ];
+=======
+ protected $allowedfields = ['UserName','Email','Password' ];
+>>>>>>> c1dafb7c8d868063a9675449c53e98ee624e4cd5
  protected $returnType = 'array';
 
 public function login(String $Email, String $Password ){
@@ -19,7 +23,7 @@ public function login(String $Email, String $Password ){
 
          return $user;
 }
- 
+ /*fonction register*/
 public function register(array $data){
    
    
@@ -45,8 +49,7 @@ public function register(array $data){
     $data['Password'] = password_hash($data['Passowrd'],PASSWORD_BCRYPT);
 
     $insertID = $this->insert([
-        'FirstName' => $data['FirstName'],
-        'LastName' => $data['LastName'],
+        'UserName' => $data['UserName'],
         'Email' => $data['Email'],
         'Password' => $data['Password']
     ]);
