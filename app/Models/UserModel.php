@@ -8,11 +8,8 @@ class UserModel extends Model{
 
  protected $table ='Users' ;
  protected $primarykey ='UserID';
-<<<<<<< HEAD
- protected $allowedfields = ['FirstName', 'LastName','Email','Password' ];
-=======
  protected $allowedfields = ['UserName','Email','Password' ];
->>>>>>> c1dafb7c8d868063a9675449c53e98ee624e4cd5
+
  protected $returnType = 'array';
 
 public function login(String $Email, String $Password ){
