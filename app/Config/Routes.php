@@ -12,3 +12,4 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/login', 'AuthController::login');                     // Affiche la page de connexion
  $routes->post('/process_login', 'AuthController::process_login');    // Traite les données du formulaire de login
  $routes->get('/logout', 'AuthController::logout');
+ $routes->get('/dashboard', 'DashboardController::index');

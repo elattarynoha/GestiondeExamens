@@ -1,75 +1,67 @@
 <?php
+
 namespace App\Models;
-// use CodeIgniter\Model;
+
 use CodeIgniter\Model;
-use App\Models\AccountModel;
 
-class UserModel extends Model{
+class UserModel extends Model
+{
+    protected $table = 'Users'; // Nom de la table
+    protected $primaryKey = 'UserID'; // Nom de la clé primaire
+    protected $allowedFields = ['UserName', 'Email', 'Password']; // Champs autorisés pour insert et update
+    protected $returnType = 'array';
 
- protected $table ='Users' ;
- protected $primarykey ='UserID';
- protected $allowedfields = ['UserName','Email','Password' ];
+    /**
+     * Fonction de connexion d'utilisateur
+     */
+    public function login(string $email, string $password)
+    {
+        // Rechercher l'utilisateur par email
+        $user = $this->where('Email', $email)->first();
 
- protected $returnType = 'array';
+        // Vérifier si l'utilisateur existe et si le mot de passe correspond
+        if ($user && password_verify($password, $user['Password'])) {
+            return $user;
+        }
 
-public function login(String $Email, String $Password ){
-
-    $user =$this->where('logemail',$Email)->first();
-
-    if ($user && password_verify($Password, $user['logpass']))
-
-         return $user;
-}
- /*fonction register*/
-public function register(array $data){
-   
-   
-   
-    $existingUser = $this->where('Email', $data['Email'])->first();
-
-    if ($existingUser) {
-        return [
-            'status' => false,
-            'message' => 'Cet email est déjà enregistré.'
-        ];
+        return null; // Retourner null si l'authentification échoue
     }
 
-    if ($insertID) {
-        // Vérifier si l'utilisateur a déjà un compte dans la table Account
-        if ($this->accountModel->userHasAccount($insertID)) {
+    /**
+     * Fonction d'inscription d'utilisateur
+     */
+    public function register(array $data)
+    {
+        // Vérifier si l'email est déjà utilisé
+        $existingUser = $this->where('Email', $data['Email'])->first();
+        if ($existingUser) {
             return [
                 'status' => false,
-                'message' => 'Cet utilisateur possède déjà un compte.'
+                'message' => 'Cet email est déjà enregistré.'
             ];
         }
 
-    $data['Password'] = password_hash($data['Passowrd'],PASSWORD_BCRYPT);
+        // Hacher le mot de passe avant de l'insérer
+        $data['Password'] = password_hash($data['Password'], PASSWORD_BCRYPT);
 
-    $insertID = $this->insert([
-        'UserName' => $data['UserName'],
-        'Email' => $data['Email'],
-        'Password' => $data['Password']
-    ]);
+        // Insérer les données de l'utilisateur
+        $insertID = $this->insert([
+            'UserName' => $data['UserName'],
+            'Email' => $data['Email'],
+            'Password' => $data['Password']
+        ]);
 
-    if ($insertID) {
+        if ($insertID) {
+            return [
+                'status' => true,
+                'message' => 'Utilisateur enregistré avec succès.',
+                'UserID' => $insertID
+            ];
+        }
+
         return [
-            'status' => true,
-            'message' => 'Utilisateur enregistré avec succès.',
-            'UserID' => $insertID
+            'status' => false,
+            'message' => 'Échec de l\'enregistrement. Veuillez réessayer.'
         ];
     }
-
-    return [
-        'status' => false,
-        'message' => 'Échec de l\'enregistrement. Veuillez réessayer.'
-    ];
-}
-
-
-}
-
-
-
-
-
 }

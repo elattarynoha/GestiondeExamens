@@ -37,10 +37,10 @@ class AuthController extends BaseController
         if ($model->insert($data_register)) {
             // Rediriger vers la page de connexion avec un message de succès
             return redirect()->to('/login')->with('success', 'Inscription réussie !');
-        } else {
+        } //else {
             // Si l'insertion échoue, rediriger avec un message d'erreur
-            return redirect()->back()->with('error', 'Une erreur est survenue, veuillez réessayer.');
-        }
+            //return redirect()->back()->with('error', 'Une erreur est survenue, veuillez réessayer.');
+        //}
     }
 
     // Afficher le formulaire de connexion
@@ -78,5 +78,17 @@ class AuthController extends BaseController
     {
         session()->destroy();
         return redirect()->to('/login');
+    }
+
+    // Méthode du tableau de bord
+    public function dashboard()
+    {
+        // Vérifiez si l'utilisateur est connecté
+        if (!session()->has('user')) {
+            return redirect()->to('/login');
+        }
+
+        // Charge la vue du tableau de bord
+        return view('dashboard');
     }
 }

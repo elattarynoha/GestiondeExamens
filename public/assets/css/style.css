@@ -170,3 +170,15 @@ a{color:inherit;text-decoration:none}
 ::placeholder{
 color: #b3b3b3;
 } 
+/* Style général pour le message d'erreur avec ID */
+#echec {
+    
+    color: #a94442; /* Couleur du texte rouge */
+	padding-left: 10%;
+}
+/* Style pour le message de succès */
+
+#success {
+    color: #3c763d; /* Texte vert */
+    padding-left:20%;
+}

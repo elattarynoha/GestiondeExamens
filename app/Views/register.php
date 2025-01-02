@@ -18,10 +18,32 @@
                     
                     <div class="login-space">
                         <!-- Login form -->
-
+                        <div class="login">
+								<form action="process_login" method="post">
+									<div class="group">
+										<label for="user" class="label">Email</label>
+										<input id="user" type="text" class="input" name="logemail" placeholder="Enter your email" required>
+									</div>
+									<div class="group">
+										<label for="pass" class="label">Password</label>
+										<input id="pass" type="password" class="input" name="logpass" data-type="password" placeholder="Enter your password" required>
+									</div>
+									<div class="group">
+										<input id="check" type="checkbox" class="check" name="remember" checked>
+										<label for="check"><span class="icon"></span> Keep me Signed in</label>
+									</div>
+									<div class="group">
+										<input type="submit" class="button" value="Sign In">
+									</div>
+									<div class="hr"></div>
+									<div class="foot">
+										<a href="#">Forgot Password?</a>
+									</div>
+								</form>
+							</div>
                         <!-- Sign up form -->
                         <div class="sign-up-form">
-                            <form action="/process_register" method="post">
+                            <form action="process_register" method="post">
                                 <div class="group">
                                     <label for="username" class="label">Username</label>
                                     <input id="username" type="text" class="input" placeholder="Create your Username" name="Username" required>
