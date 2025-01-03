@@ -65,7 +65,7 @@
                                 </div>
                                 <div class="hr"></div>
                                 <div class="foot">
-                                    <label for="tab-1">Already Member?</label>
+                                    <label for="tab-1"><a href="http://localhost/myproject/public/login">Already a Member? Login</a></label>
                                 </div>
                             </form>
                         </div>
@@ -75,5 +75,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

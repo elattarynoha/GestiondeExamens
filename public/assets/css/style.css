@@ -5,7 +5,7 @@ body{
     display: flex; /* Utilisation de Flexbox */
     justify-content: center; /* Centrer horizontalement */
     align-items: center; /* Centrer verticalement */
-    min-height: 100vh; /* S'assurer que le body occupe toute la hauteur de la fenêtre */
+    min-height: 0vh; /* S'assurer que le body occupe toute la hauteur de la fenêtre */
     background: #f0f0f0; /* Couleur de fond, modifiable */
    
 

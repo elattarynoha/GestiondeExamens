@@ -4,8 +4,9 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        return view('welcome_message');
+        // Charger la vue home.php qui contient le code HTML de ta template
+        return view('home');
     }
 }

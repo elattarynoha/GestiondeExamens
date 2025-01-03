@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="http://localhost/codeigniter4-projets/public/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="row">
@@ -13,7 +13,7 @@
 				<div class="login-box">
 					<div class="login-snip">
 						<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
-						<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+						<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"><a href="register.php">Sign Up</a></label>
 						<div class="login-space">
 							<div class="login">
 								
@@ -49,16 +49,7 @@
 							</div>
 							
 							<div class="sign-up-form">
-								<!-- Placez ici le formulaire "Sign Up" si nécessaire -->
-								<div class="sign-up-form">
-								
-									<?php if (session()->has('success')) : ?>
-    								<div id="success" class="alert alert-success">
-        							<?= session('success') ?>
-    								</div>
-									<?php endif; ?>
-									<br>
-                            		<form action="process_register" method="post">
+							<form action="/process_register" method="post">
                                 <div class="group">
                                     <label for="username" class="label">Username</label>
                                     <input id="username" type="text" class="input" placeholder="Create your Username" name="Username" required>
@@ -80,10 +71,9 @@
                                 </div>
                                 <div class="hr"></div>
                                 <div class="foot">
-                                    <label for="tab-1">Already Member?</label>
+                                    <label for="tab-1">Already Member? Login</label>
                                 </div>
                             </form>
-                        </div>
 							</div>
 						</div>
 					</div>   
