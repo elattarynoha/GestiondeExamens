@@ -12,7 +12,11 @@
 error_reporting(E_ALL & ~E_DEPRECATED);
 // If you want to suppress more types of errors.
 // error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+<<<<<<< HEAD
 ini_set('display_errors', '0');
+=======
+ini_set('display_errors', '1');
+>>>>>>> c5f199fe9a0e597dc74934bc661733986f38da37
 
 /*
  |--------------------------------------------------------------------------
