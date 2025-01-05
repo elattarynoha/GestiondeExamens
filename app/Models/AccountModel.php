@@ -1,6 +1,4 @@
 <?php 
-// AccountModel.php
-
 namespace App\Models;
 
 use CodeIgniter\Model;
@@ -21,9 +19,32 @@ class AccountModel extends Model
         $this->userModel = new UserModel();  // Initialisation du modèle UserModel
     }
 
-    /**
+    /*
      * Fonction pour créer un compte après vérification des données de l'utilisateur
      */
+    public function login(string $email, string $password)
+    {
+        // Rechercher l'utilisateur par email dans la table accounts
+        $builder = $this->db->table('accounts');
+        $builder->select('accounts.*, roles.RoleName');
+        $builder->join('roles', 'accounts.RoleID = roles.RoleID');
+        $builder->where('accounts.AcademicEmail', $email);
+        $user = $builder->get()->getRowArray();
+
+        // Vérifier si l'utilisateur existe et si le mot de passe correspond
+        if ($user && password_verify($password, $user['Password'])) {
+            return [
+                'AccountID' => $user['AccountID'],
+                'UserID'    => $user['UserID'],
+                'RoleID'    => $user['RoleID'],
+                'RoleName'  => $user['RoleName'],
+            ];
+        }
+
+        return null; // Retourner null si l'authentification échoue
+    }
+
+
     public function register(array $data)
     {
         // Vérifier si l'utilisateur existe avec les données fournies
