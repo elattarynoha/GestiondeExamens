@@ -1,15 +1,15 @@
 <?php
 
 use CodeIgniter\Router\RouteCollection;
+use CodeIgniter\Config\Services; // Assure-toi que cette ligne est incluse
 
 /**
  * @var RouteCollection $routes
  */
 
- $routes->get('/', 'Home::index');
- //$routes->get('/', 'AuthController::register');
- $routes->get('/register', 'AuthController::register');               // Affiche la page d'inscription
- $routes->post('/process_register', 'AuthController::process_register'); // Traite les données du formulaire d'inscription
- $routes->get('/login', 'AuthController::login');                   // Affiche la page de connexion
- $routes->post('/process_login', 'AuthController::process_login');    // Traite les données du formulaire de login
- $routes->get('/logout', 'AuthController::logout');
+$routes = Services::routes();
+
+$routes->get('/', 'AuthentifController::register'); // Route par défaut
+$routes->get('/register', 'AuthentifController::register'); // Route pour /register
+
+return $routes;
