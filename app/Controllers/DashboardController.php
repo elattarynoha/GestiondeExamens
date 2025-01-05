@@ -4,13 +4,17 @@ namespace App\Controllers;
 
 class DashboardController extends BaseController
 {
-    public function index()
+    // Dashboard pour Student
+    public function StudentDashboard()
     {
-        // Vérification de la session utilisateur
-        if (!session()->get('user')) {
-            return redirect()->to('/login')->with('error', 'Veuillez vous connecter.');
-        }
+        // Récupérer les informations spécifiques à l'étudiant
+        return view('student_dashboard');
+    }
 
-        return view('dashboard');
+    // Dashboard pour professeur
+    public function ProfDashboard()
+    {
+        // Récupérer les informations spécifiques au professeur
+        return view('prof_dashboard');
     }
 }
