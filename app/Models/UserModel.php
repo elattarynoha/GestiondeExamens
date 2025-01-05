@@ -13,7 +13,7 @@ class UserModel extends Model
     protected $returnType = 'array';
 
     /**
-     * Vérifier si un utilisateur existe avec les données fournies
+     * Vérifier si un utilisateur existe avec les données fournies , cet erreur vienne de UserModel
      */
     public function userExists(array $userData)
     {

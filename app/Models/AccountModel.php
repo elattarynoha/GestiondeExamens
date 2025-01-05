@@ -24,7 +24,7 @@ class AccountModel extends Model
     /**
      * Fonction pour créer un compte après vérification des données de l'utilisateur
      */
-    public function createAccount(array $data)
+    public function register(array $data)
     {
         // Vérifier si l'utilisateur existe avec les données fournies
         $userExists = $this->userModel->userExists([
@@ -38,6 +38,7 @@ class AccountModel extends Model
 
         // Si l'utilisateur existe, insérer les données dans la table 'accounts'
         if ($userExists == true) {
+
             // Hacher le mot de passe avant de l'insérer
             $data['Password'] = password_hash($data['Password'], PASSWORD_BCRYPT);
 
@@ -45,7 +46,7 @@ class AccountModel extends Model
             $insertID = $this->insert([
                 'UserID' => $data['UserID'],       // L'ID de l'utilisateur
                 'RoleID' => $data['RoleID'],       // Le rôle de l'utilisateur
-                'AcademicEmail' => $data['AcademicEmail'],  // Email académique
+                'AcademicEmail' => $data['AcademicEmail'],  // Email académique de l'utilisateur
                 'Password' => $data['Password']    // Mot de passe haché
             ]);
 
@@ -66,7 +67,7 @@ class AccountModel extends Model
         // Si l'utilisateur n'existe pas, renvoyer un message d'erreur
         return [
             'status' => false,
-            'message' => 'Les données de l\'utilisateur ne correspondent pas à un enregistrement existant.'
+            'message' => 'Les données de l\'utilisateur ne correspondent pas à un enregistrement existant.(cet erreur vienne de AccountModel)'
         ];
     }
 }
