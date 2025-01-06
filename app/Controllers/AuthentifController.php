@@ -6,58 +6,56 @@ use App\Models\AccountModel;
 
 class AuthentifController extends BaseController{
 
-    public function register(){
-        //Affichage de la page : REGISTER
-        return view('register');
-    }
     public function login(){
         //Affichage de la page : LOGIN
         return view('login');
     }
+
+    public function register(){
+        //Affichage de la page : REGISTER
+        return view('register');
+    }
+
     // Processus d'inscription
-    public function SignUp_Process(){
+    public function SignUp_Process()
+    {
         $accountmodel = new AccountModel();
         $Usermodel = new UserModel();
-         
-        //Récupérer les données de formulaire
+    
         $data_register = [
             'FirstName' => $this->request->getPost('UserName'),
             'LastName' => $this->request->getPost('UserFname'),
             'AcademicEmail' => $this->request->getPost('UserEmail'),
         ];
-
-        //Empêcher la création d’un compte si un compte existe déjà pour le mème User
+    
+        // Vérifier si un compte existe déjà
         $existingAccount = $accountmodel->where('AcademicEmail', $data_register['AcademicEmail'])->first();
         if ($existingAccount) {
-            return redirect()->back()->with('error', 'An account already exists for this user.');   
-        }else{
-        // Tester si l'user est inscrit dans notre système (Table Users) pour lui créer un compte
-        $UserExisting= $Usermodel->where('AcademicEmail',$data_register['AcademicEmail'])->first();
-        if($UserExisting){
-            $data_account = [
-                'UserID' => $UserExisting['UserID'],
-                'RoleID' => $UserExisting['RoleID'],
-                'AcademicEmail' => $data_register['AcademicEmail'],
-                'Password' => password_hash($this->request->getPost('UserPass'), PASSWORD_DEFAULT),
-            ];
-
-        // Insérer l'user dans la table accounts
-        if ($accountmodel->insert($data_account)) {
-            // Rediriger vers la page de connexion avec un message de succès
-            return redirect()->to('/login')->with('success', 'Account created successfully!');
-        }else {
-            // Si l'insertion échoue, Rediriger avec un message d'erreur
-            return redirect()->back()->with('error', 'ERROR : Ops! Try again');
+            return redirect()->back()->withInput()->with('general_error', 'An account already exists for this user.');
         }
-        }else{
-             // L'utilisateur n'existe pas dans la table 'users'
-        return redirect()->back()->with('error', 'User not found !');
-        } 
-
-            }
+    
+        // Vérifier si l'utilisateur existe dans la table Users
+        $UserExisting = $Usermodel->where('AcademicEmail', $data_register['AcademicEmail'])->first();
+        if (!$UserExisting) {
+            return redirect()->back()->withInput()->with('general_error', 'User not found in the system.');
+        }
+    
+        // Créer un nouveau compte
+        $data_account = [
+            'UserID' => $UserExisting['UserID'],
+            'RoleID' => $UserExisting['RoleID'],
+            'AcademicEmail' => $data_register['AcademicEmail'],
+            'Password' => password_hash($this->request->getPost('UserPass'), PASSWORD_DEFAULT),
+        ];
+    
+        if ($accountmodel->insert($data_account)) {
+            return redirect()->to('/login')->with('success', 'Account created successfully!');
+        } else {
+            return redirect()->back()->withInput()->with('general_error', 'ERROR: Failed to create account. Try again.');
+        }
     }
+    
 
-    //Processus de Login
     public function SignIn_Process(){
         $accountmodel = new AccountModel();
     
@@ -67,9 +65,14 @@ class AuthentifController extends BaseController{
     
         // Chercher l'User dans la table accounts
         $User = $accountmodel->where('AcademicEmail', $email)->first(); 
-        
-        // Tester les données entrées
-        if ($User && password_verify($password, $User['Password'])) {
+    
+        // Vérifier si l'email existe
+        if (!$User) {
+            return redirect()->back()->withInput()->with('general_error', 'Email not found. Please check your email.');
+        }
+    
+        // Tester si le mot de passe est correct
+        if (password_verify($password, $User['Password'])) {
             // Créer une session pour l'utilisateur
             session()->set('user', [
                 'UserID' => $User['UserID'],
@@ -88,8 +91,12 @@ class AuthentifController extends BaseController{
             } else {
                 return redirect()->to('/login')->with('error', "ERROR : Ops! Try again");
             }
+        } else {
+            // Si le mot de passe est incorrect
+            return redirect()->back()->withInput()->with('general_error', 'Password incorrect ! Please try again');
         }
     }
+    
     
     //Processus de Logout
     public function logout(){
