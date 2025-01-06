@@ -49,10 +49,8 @@ class AccountModel extends Model
     {
         // Vérifier si l'utilisateur existe avec les données fournies
         $userExists = $this->userModel->userExists([
-            'CNI' => $data['CNI'],
             'FirstName' => $data['FirstName'],
             'LastName' => $data['LastName'],
-            'Birthdate' => $data['Birthdate'],
             'AcademicEmail' => $data['AcademicEmail'],
             'RoleID' => $data['RoleID']
         ]);
@@ -61,7 +59,7 @@ class AccountModel extends Model
         if ($userExists == true) {
 
             // Hacher le mot de passe avant de l'insérer
-            $data['Password'] = password_hash($data['Password'], PASSWORD_BCRYPT);
+            $data['Password'] = password_hash($data['Password'], PASSWORD_DEFAULT);
 
             // Insérer les données dans la table 'accounts'
             $insertID = $this->insert([
@@ -74,21 +72,21 @@ class AccountModel extends Model
             if ($insertID) {
                 return [
                     'status' => true,
-                    'message' => 'Compte créé avec succès.',
+                    'message' => 'Account successfully created.',
                     'AccountID' => $insertID
                 ];
             }
 
             return [
                 'status' => false,
-                'message' => 'Échec de la création du compte.'
+                'message' => 'Account creation failed.'
             ];
         }
 
         // Si l'utilisateur n'existe pas, renvoyer un message d'erreur
         return [
             'status' => false,
-            'message' => 'Les données de l\'utilisateur ne correspondent pas à un enregistrement existant.(cet erreur vienne de AccountModel)'
+            'message' => 'User data does not match an existing record. (This error comes from AccountModel)'
         ];
     }
 }
