@@ -86,7 +86,7 @@ class AccountModel extends Model
         // Si l'utilisateur n'existe pas, renvoyer un message d'erreur
         return [
             'status' => false,
-            'message' => 'User data does not match an existing record. (This error comes from AccountModel)'
+            'message' => 'User data does not match an existing record. (This error comes from AccountModel).'
         ];
     }
 }
