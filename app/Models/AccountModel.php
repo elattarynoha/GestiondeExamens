@@ -1,6 +1,4 @@
 <?php 
-// AccountModel.php
-
 namespace App\Models;
 
 use CodeIgniter\Model;
@@ -21,17 +19,38 @@ class AccountModel extends Model
         $this->userModel = new UserModel();  // Initialisation du modèle UserModel
     }
 
-    /**
+    /*
      * Fonction pour créer un compte après vérification des données de l'utilisateur
      */
+    public function login(string $email, string $password)
+    {
+        // Rechercher l'utilisateur par email dans la table accounts
+        $builder = $this->db->table('accounts');
+        $builder->select('accounts.*, roles.RoleName');
+        $builder->join('roles', 'accounts.RoleID = roles.RoleID');
+        $builder->where('accounts.AcademicEmail', $email);
+        $user = $builder->get()->getRowArray();
+
+        // Vérifier si l'utilisateur existe et si le mot de passe correspond
+        if ($user && password_verify($password, $user['Password'])) {
+            return [
+                'AccountID' => $user['AccountID'],
+                'UserID'    => $user['UserID'],
+                'RoleID'    => $user['RoleID'],
+                'RoleName'  => $user['RoleName'],
+            ];
+        }
+
+        return null; // Retourner null si l'authentification échoue
+    }
+
+
     public function register(array $data)
     {
         // Vérifier si l'utilisateur existe avec les données fournies
         $userExists = $this->userModel->userExists([
-            'CNI' => $data['CNI'],
             'FirstName' => $data['FirstName'],
             'LastName' => $data['LastName'],
-            'Birthdate' => $data['Birthdate'],
             'AcademicEmail' => $data['AcademicEmail'],
             'RoleID' => $data['RoleID']
         ]);
@@ -40,7 +59,7 @@ class AccountModel extends Model
         if ($userExists == true) {
 
             // Hacher le mot de passe avant de l'insérer
-            $data['Password'] = password_hash($data['Password'], PASSWORD_BCRYPT);
+            $data['Password'] = password_hash($data['Password'], PASSWORD_DEFAULT);
 
             // Insérer les données dans la table 'accounts'
             $insertID = $this->insert([
@@ -53,21 +72,21 @@ class AccountModel extends Model
             if ($insertID) {
                 return [
                     'status' => true,
-                    'message' => 'Compte créé avec succès.',
+                    'message' => 'Account successfully created.',
                     'AccountID' => $insertID
                 ];
             }
 
             return [
                 'status' => false,
-                'message' => 'Échec de la création du compte.'
+                'message' => 'Account creation failed.'
             ];
         }
 
         // Si l'utilisateur n'existe pas, renvoyer un message d'erreur
         return [
             'status' => false,
-            'message' => 'Les données de l\'utilisateur ne correspondent pas à un enregistrement existant.(cet erreur vienne de AccountModel)'
+            'message' => 'User data does not match an existing record. (This error comes from AccountModel).'
         ];
     }
 }
