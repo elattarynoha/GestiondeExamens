@@ -59,7 +59,7 @@ class AccountModel extends Model
         if ($userExists == true) {
 
             // Hacher le mot de passe avant de l'insérer
-            $data['Password'] = password_hash($data['Password'], PASSWORD_BCRYPT);
+            $data['Password'] = password_hash($data['Password'], PASSWORD_DEFAULT);
 
             // Insérer les données dans la table 'accounts'
             $insertID = $this->insert([

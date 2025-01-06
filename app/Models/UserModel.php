@@ -9,7 +9,7 @@ class UserModel extends Model
 {
     protected $table = 'users'; // Table des utilisateurs
     protected $primaryKey = 'UserID'; // Clé primaire
-    protected $allowedFields = ['CNI', 'FirstName', 'LastName', 'Birthdate', 'AcademicEmail', 'RoleID'];
+    protected $allowedFields = ['FirstName', 'LastName', 'AcademicEmail', 'RoleID'];
     protected $returnType = 'array';
 
     /**
@@ -19,10 +19,8 @@ class UserModel extends Model
     {
         // On cherche un utilisateur dont les champs correspondent à ceux fournis
         $user = $this->where([
-            'CNI' => $userData['CNI'],
             'FirstName' => $userData['FirstName'],
             'LastName' => $userData['LastName'],
-            'Birthdate' => $userData['Birthdate'],
             'AcademicEmail' => $userData['AcademicEmail'],
             'RoleID' => $userData['RoleID']
         ])->first();
