@@ -20,43 +20,55 @@
             <!-- <img src="images/signup-bg.jpg" alt=""> -->
             <div class="container">
                 <div class="signup-content">
-                    <form method="POST" id="signup-form" class="signup-form">
-                        <h2 class="form-title">Create account</h2>
-                        <div class="form-group">
-                            <input type="text" class="form-input" name="UserFname" id="name" placeholder="First Name" required/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-input" name="UserName" id="name" placeholder="Last Name" required/>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-input" name="UserEmail" id="email" placeholder="Email" required/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-input" name="Userpass" id="password" placeholder="Password" required/>
-                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-input" name="UserConfpass" id="re_password" placeholder="Repeat your password" required/>
-                        </div>
-                        <div id="password-error" style="color: red; display: none;">
+                <form action="SignUp_Process" method="POST" id="signup-form" class="signup-form">
+    <h2 class="form-title">Create account</h2>
+
+            <!-- Affichage des erreurs générales -->
+            <?php if (session('general_error')): ?>
+                <div style="color: red; margin-bottom: 15px; text-align: center;">
+                    <?= session('general_error') ?>
+                </div>
+            <?php endif; ?>
+
+            <div class="form-group">
+                <input type="text" class="form-input" name="UserFname" id="name" placeholder="First Name" value="<?= old('UserFname') ?>" required/>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-input" name="UserName" id="name" placeholder="Last Name" value="<?= old('UserName') ?>" required/>
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-input" name="UserEmail" id="email" placeholder="Email" value="<?= old('UserEmail') ?>" required/>
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-input" name="UserPass" id="password" placeholder="Password" required/>
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-input" name="UserConfpass" id="re_password" placeholder="Repeat your password" required/>
+            </div>
+            <div id="password-error" style="color: red; display: none;">
                              Passwords do not match.
                         </div>
-                        <div class="form-group">
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
-                        </div>
-                    </form>
-                    <p class="loginhere">
-                        Have already an account ? <a href="login.php" class="loginhere-link">Login here</a>
-                    </p>
-                </div>
+            <div class="form-group">
+                <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
             </div>
-        </section>
+        </form>
 
-    </div>
+                            <p class="loginhere">
+                                Have already an account ? <a href="<?= site_url('login') ?>" class="loginhere-link">Login here</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- JS -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/pass.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-</html>
+            </div>
+
+            <!-- JS -->
+            <script src="assets/vendor/jquery/jquery.min.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/pass.js"></script>
+        </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+        </html>
