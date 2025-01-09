@@ -9,7 +9,7 @@ class ProfController extends BaseController{
     // Session du professeur connecté:
     $prof_ID= session()->get('user')['UserID'];
     $profModel = new ProfModel();
-    $LesModules = $profModel->getModules($prof_ID);
+    $LesModules = $profModel->getModulesByProf($prof_ID);
     // Passer les modules en view:
     return view('prof_dashboard',['modules' => $LesModules]);
     }

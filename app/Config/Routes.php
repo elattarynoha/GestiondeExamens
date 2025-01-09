@@ -18,3 +18,5 @@ use CodeIgniter\Router\RouteCollection;
  
  // La route pour se déconnecter
  $routes->get('/logout', 'AuthentifController::logout');
+ // route pour afficher les modules selon le prof:
+$routes->get('/getModulesProf','ProfController::getModulesProf');
