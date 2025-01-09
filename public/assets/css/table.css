@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+  }
+  
+  .students-table th, .students-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .students-table th {
+    background-color: #1c1f36;
+    color: white;
+  }
+  
+  .students-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  
+  .students-table tr:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .students-table button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .students-table button:hover {
+    background-color: #2563eb;
+  }
+  

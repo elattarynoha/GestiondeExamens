@@ -18,3 +18,5 @@ use CodeIgniter\Router\RouteCollection;
  
  // La route pour se déconnecter
  $routes->get('/logout', 'AuthentifController::logout');
+
+ //$routes->get('/load_table', 'Table::load_table');
