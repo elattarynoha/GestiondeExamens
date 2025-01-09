@@ -70,5 +70,5 @@
             <script src="assets/vendor/jquery/jquery.min.js"></script>
             <script src="assets/js/main.js"></script>
             <script src="assets/js/pass.js"></script>
-        </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+        </body>
         </html>
