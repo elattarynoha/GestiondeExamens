@@ -54,46 +54,69 @@ class AuthentifController extends BaseController{
             return redirect()->back()->withInput()->with('general_error', 'ERROR: Failed to create account. Try again.');
         }
     }
-    
 
-    public function SignIn_Process(){
+    // Processus de Login
+    public function SignIn_Process() {
         $accountmodel = new AccountModel();
     
-        // Récupérer data depuis le formulaire de connexion
+        // Récupérer les données du formulaire
         $email = $this->request->getPost('logemail');
         $password = $this->request->getPost('logpass');
     
-        // Chercher l'User dans la table accounts
-        $User = $accountmodel->where('AcademicEmail', $email)->first(); 
+        // Chercher l'utilisateur dans la table accounts
+        $User = $accountmodel->where('AcademicEmail', $email)->first();
     
-        // Vérifier si l'email existe
+        // Vérifier si l'utilisateur existe
         if (!$User) {
             return redirect()->back()->withInput()->with('general_error', 'Email not found. Please check your email.');
         }
     
-        // Tester si le mot de passe est correct
+        // Vérifier si le mot de passe est haché
         if (password_verify($password, $User['Password'])) {
-            // Créer une session pour l'utilisateur
+            // Authentification réussie
             session()->set('user', [
                 'UserID' => $User['UserID'],
-                'UserName' => $User['LastName'],
-                'UserFname' => $User['FirstName'],
                 'AcademicEmail' => $User['AcademicEmail'],
                 'AccountID' => $User['AccountID'],
-                'RoleID' => $User['RoleID']
+                'RoleID' => $User['RoleID'],
             ]);
     
-            // Rediriger l'utilisateur vers son dashboard
+            // Rediriger vers le dashboard approprié
             if ($User['RoleID'] == 1) {
                 return redirect()->to('/StudentDashboard');
             } elseif ($User['RoleID'] == 2) {
                 return redirect()->to('/ProfDashboard');
             } else {
-                return redirect()->to('/login')->with('error', "ERROR : Ops! Try again");
+                return redirect()->to('/login')->with('error', 'ERROR: Ops! Try again.');
             }
         } else {
-            // Si le mot de passe est incorrect
-            return redirect()->back()->withInput()->with('general_error', 'Password incorrect ! Please try again');
+            // Si le mot de passe n'est pas haché (ancien utilisateur)
+            if ($User['Password'] === $password) {
+                // Authentification réussie avec mot de passe non haché
+                // Hacher le mot de passe et mettre à jour dans la base
+                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                $accountmodel->update($User['AccountID'], ['Password' => $hashedPassword]);
+    
+                // Créer une session utilisateur
+                session()->set('user', [
+                    'UserID' => $User['UserID'],
+                    'AcademicEmail' => $User['AcademicEmail'],
+                    'AccountID' => $User['AccountID'],
+                    'RoleID' => $User['RoleID'],
+                ]);
+    
+                // Rediriger vers le dashboard approprié
+                if ($User['RoleID'] == 1) {
+                    return redirect()->to('/StudentDashboard');
+                } elseif ($User['RoleID'] == 2) {
+                    return redirect()->to('/ProfDashboard');
+                } else {
+                    return redirect()->to('/login')->with('error', 'ERROR: Ops! Try again.');
+                }
+            } else {
+                // Si le mot de passe est incorrect
+                return redirect()->back()->withInput()->with('general_error', 'Password incorrect! Please try again.');
+            }
         }
     }
     

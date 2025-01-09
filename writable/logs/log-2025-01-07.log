@@ -1,0 +1,100 @@
+CRITICAL - 2025-01-07 01:00:47 --> ParseError: syntax error, unexpected token "else", expecting "function" or "const"
+[Method: GET, Route: login]
+in APPPATH\Controllers\AuthentifController.php on line 94.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\AuthentifController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthentifController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthentifController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\AuthentifController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 01:13:16 --> Error: Call to a member function first() on null
+[Method: POST, Route: SignIn_Process]
+in APPPATH\Controllers\AuthentifController.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 01:23:00 --> BadMethodCallException: Call to undefined method App\Models\AccountModel::login
+[Method: POST, Route: SignIn_Process]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\AuthentifController.php(67): CodeIgniter\Model->__call('login', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 01:24:13 --> Error: Call to a member function first() on null
+[Method: POST, Route: SignIn_Process]
+in APPPATH\Controllers\AuthentifController.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 01:29:42 --> Error: Cannot use object of type App\Models\AccountModel as array
+[Method: POST, Route: SignIn_Process]
+in APPPATH\Controllers\AuthentifController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 01:33:36 --> Error: Cannot use object of type App\Models\AccountModel as array
+[Method: POST, Route: SignIn_Process]
+in APPPATH\Controllers\AuthentifController.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 15:10:16 --> TypeError: App\Models\AccountModel::login(): Argument #1 ($email) must be of type string, array given, called in C:\xampp\htdocs\GestionDeExamens\app\Controllers\AuthentifController.php on line 74
+[Method: POST, Route: SignIn_Process]
+in APPPATH\Models\AccountModel.php on line 25.
+ 1 APPPATH\Controllers\AuthentifController.php(74): App\Models\AccountModel->login([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 15:23:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "student_dashboard.php"
+[Method: GET, Route: StudentDashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('student_dashboard', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(11): view('student_dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->StudentDashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 15:37:35 --> ErrorException: Undefined array key "LastName"
+[Method: POST, Route: SignIn_Process]
+in APPPATH\Controllers\AuthentifController.php on line 79.
+ 1 APPPATH\Controllers\AuthentifController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LastName"', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\AuthentifController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-07 15:39:06 --> ErrorException: Undefined array key "LastName"
+[Method: POST, Route: SignIn_Process]
+in APPPATH\Controllers\AuthentifController.php on line 103.
+ 1 APPPATH\Controllers\AuthentifController.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LastName"', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\AuthentifController.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignIn_Process()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
