@@ -170,8 +170,6 @@ body {
       <li><a href="#"><span><i class="fa-regular fa-user"></i></span> Profile</a></li>
       <li><a href="#" id="show_tableM_btn"><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
       <li>
-      
-        <a href="#"><span>📝</span> Filière</a>
         <ul class="submenu">
         <li><a href="#" id="show_table_btn">IL</a></li>
         <li><a href="#">ADIA</a></li>
@@ -183,10 +181,6 @@ body {
 
   <!-- Dashboard -->
   <div class="dashboard" id="dashboard-content">
-    <h2>Bienvenue dans le Dashboard</h2>
-    <div id="table-container" style="display:none;">
-            <?= view('TableEtu'); ?>
-    </div>
     <div id="table-containerM" style="display:none;">
             <?= view('TableModule'); ?>
     </div>
