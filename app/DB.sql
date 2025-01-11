@@ -27,14 +27,14 @@ CREATE TABLE accounts (
 -- Table des filières
 CREATE TABLE filieres (
     FiliereID INT AUTO_INCREMENT PRIMARY KEY,
-    NomFiliere VARCHAR(100) NOT NULL,
+    NomFiliere VARCHAR(100) NOT NULL
 );
 
 
 -- Table des modules
 CREATE TABLE modules (
     ModuleID INT AUTO_INCREMENT PRIMARY KEY,
-    NomModule VARCHAR(100) NOT NULL,
+    NomModule VARCHAR(100) NOT NULL
 );
 
 -- Table d'association Filiere_Module (relation plusieurs-à-plusieurs)
@@ -47,7 +47,7 @@ CREATE TABLE Filiere_Module (
 );
 
 -- Table pour lier les professeurs aux modules qu'ils enseignent
-CREATE TABLE Professeurs_Modules (
+CREATE TABLE Prof_Module (
     ProfesseurID INT,
     ModuleID INT,
     PRIMARY KEY (ProfesseurID, ModuleID),
