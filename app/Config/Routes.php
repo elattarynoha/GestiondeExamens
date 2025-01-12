@@ -13,8 +13,8 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post('/SignIn_Process', 'AuthentifController::SignIn_Process');    // Traite les données du formulaire de login
 
  // Les routes pour le processus d'authentification:
- $routes->get('/StudentDashboard','DashboardController::StudentDashboard');
- $routes->get('/ProfDashboard','DashboardController::ProfDashboard');
+ $routes->get('/StudentDashboard','StudentDashboard_Controller::StudentDashboard');
+ $routes->get('/ProfDashboard','ProfDashboard_Controller::ProfDashboard');
  
  // La route pour se déconnecter
  $routes->get('/logout', 'AuthentifController::logout');

@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use App\Models\Entities\Users; // Import correct de l'entité
+use App\Entities\Users; // Import correct de l'entité
 
 class UserModel extends Model
 {
