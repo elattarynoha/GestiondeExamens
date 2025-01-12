@@ -1,12 +1,12 @@
 <?php
-namespace App\Models\Entities;
+namespace App\Entities;
 
 use CodeIgniter\Entity\Entity;
 
-class Filieres extends Entity
+class FiliereModule extends Entity
 {
     protected $attributes = [
         'FiliereID' => null,
-        'NomFiliere' => null,
+        'ModuleID' => null,
     ];
 }

@@ -2,7 +2,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use App\Models\Entities\Accounts; // Importation de l'entité Accounts
+use App\Entities\Accounts; // Importation de l'entité Accounts
 use App\Models\UserModel;
 
 class AccountModel extends Model

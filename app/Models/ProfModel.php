@@ -2,8 +2,8 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use App\Models\Entities\Modules;  // Entité Modules
-use App\Models\Entities\Filieres; // Entité Filieres
+use App\Entities\Modules;  // Entité Modules
+use App\Entities\Filieres; // Entité Filieres
 
 class ProfModel extends Model
 {
@@ -32,7 +32,7 @@ class ProfModel extends Model
         $query = $builder->get();
 
         // Retourner un tableau contenant les noms des modules
-        return array_column($query->getResultArray(), 'NomModule');
+        return $query->getResultArray();
     }
 
     /**
