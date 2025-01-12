@@ -1,0 +1,94 @@
+CRITICAL - 2025-01-10 00:37:03 --> ErrorException: Undefined variable $modules
+[Method: GET, Route: ProfDashboard]
+in APPPATH\Views\prof_dashboard.php on line 179.
+ 1 APPPATH\Views\prof_dashboard.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modules', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('prof_dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(17): view('prof_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->ProfDashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-10 00:40:18 --> ErrorException: Undefined variable $modules
+[Method: GET, Route: ProfDashboard]
+in APPPATH\Views\prof_dashboard.php on line 179.
+ 1 APPPATH\Views\prof_dashboard.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modules', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('prof_dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(17): view('prof_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->ProfDashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-10 00:40:21 --> ErrorException: Undefined variable $modules
+[Method: GET, Route: ProfDashboard]
+in APPPATH\Views\prof_dashboard.php on line 179.
+ 1 APPPATH\Views\prof_dashboard.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modules', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('prof_dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(17): view('prof_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->ProfDashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-10 00:42:17 --> ErrorException: Undefined variable $modules
+[Method: GET, Route: ProfDashboard]
+in APPPATH\Views\prof_dashboard.php on line 179.
+ 1 APPPATH\Views\prof_dashboard.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modules', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('prof_dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(17): view('prof_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->ProfDashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-10 00:42:23 --> ErrorException: Undefined variable $modules
+[Method: GET, Route: ProfDashboard]
+in APPPATH\Views\prof_dashboard.php on line 179.
+ 1 APPPATH\Views\prof_dashboard.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modules', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('prof_dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(17): view('prof_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->ProfDashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-10 00:45:43 --> ErrorException: Undefined variable $LesModules
+[Method: GET, Route: ProfDashboard]
+in APPPATH\Views\prof_dashboard.php on line 179.
+ 1 APPPATH\Views\prof_dashboard.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $LesModules', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\prof_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('prof_dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(17): view('prof_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->ProfDashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-10 08:56:04 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: Modules]
+in APPPATH\Controllers\ModuleController.php on line 12.
+ 1 APPPATH\Controllers\ModuleController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\ModuleController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
