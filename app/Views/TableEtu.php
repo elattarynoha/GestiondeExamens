@@ -12,7 +12,6 @@
       <tr>
         <th>Nom</th>
         <th>Prénom</th>
-        <th>Email</th>
         <th>Module</th>
         <th>Note Finale</th>
         <th>Actions</th>
@@ -22,7 +21,6 @@
       <tr>
         <td>Doe</td>
         <td>John</td>
-        <td>john.doe@example.com</td>
         <td>Design Thinking</td>
         <td>16</td>
         <td><button class="edit-btn" data-id="1">Modifier</button></td>
@@ -30,7 +28,6 @@
       <tr>
         <td>Smith</td>
         <td>Jane</td>
-        <td>jane.smith@example.com</td>
         <td>Design Thinking</td>
         <td>16</td>
         <td><button onclick="editStudent(this)">Modifier</button></td>

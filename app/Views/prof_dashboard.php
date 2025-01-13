@@ -169,6 +169,7 @@ body {
       <li><a href="#" class="active"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
       <li><a href="#"><span><i class="fa-regular fa-user"></i></span> Profile</a></li>
       <li><a href="#" id="show_tableM_btn"><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
+      <li><a href="#" id="show_table_btn"><span><i class="fa-solid fa-book"></i></span> Liste des étudiants</a></li>
       <li>
         <ul class="submenu">
         <li><a href="#" id="show_table_btn">IL</a></li>
@@ -183,6 +184,9 @@ body {
   <div class="dashboard" id="dashboard-content">
     <div id="table-containerM" style="display:none;">
             <?= view('TableModule'); ?>
+    </div>
+    <div id="table-container" style="display:none;">
+            <?= view('TableEtu'); ?>
     </div>
     <div id="table-container" style="display: none; margin-top: 20px;"></div>
   </div>
