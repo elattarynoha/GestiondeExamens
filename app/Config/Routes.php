@@ -22,6 +22,6 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/Modules', 'ModuleController::showModules');  
 
 
-$routes->get('/load_table_etu', 'ModuleController::load_table_etu');
+$routes->get('/load_table_etudiant', 'ModuleController::load_table_etu');
 
 
