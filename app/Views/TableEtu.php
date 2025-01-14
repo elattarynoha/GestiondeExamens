@@ -6,6 +6,7 @@
   <title>Table des Étudiants</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/table.css">
+  <link rel="stylesheet" href="assets/css/form.css">
   <style>
     body {
 margin: 0;
@@ -195,7 +196,7 @@ background-color: #2c6cd7;
         <td>John</td>
         <td>Design Thinking</td>
         <td>16</td>
-        <td><button class="edit-btn" data-id="1">Modifier</button></td>
+        <td><button class="modify-btn" data-id="1">Modifier</button></td>
       </tr>
       <tr>
         <td>Smith</td>
@@ -207,7 +208,37 @@ background-color: #2c6cd7;
     </tbody>
   </table>
 
+    
+    <div id="note-form" class="form-container" style="display: none;">
+    <h3>Saisie de note</h3>
+    <form>
+        <div>
+            <label for="student-name">Nom</label>
+            <input type="text" id="student-name" name="student-name" readonly>
+        </div>
+        <div>
+            <label for="student-firstname">Prénom</label>
+            <input type="text" id="student-firstname" name="student-firstname" readonly>
+        </div>
+        <div>
+            <label for="module-name">Module</label>
+            <input type="text" id="module-name" name="module-name" readonly>
+        </div>
+        <div>
+            <label for="final-grade">Note Finale</label>
+            <input type="number" id="final-grade" name="final-grade" min="0" max="20" required>
+        </div>
+        <div>
+            <button type="submit" class="submit-btn">Enregistrer</button>
+            <button type="button" class="cancel-btn">Annuler</button>
+        </div>
+    </form>
+</div>
+
   </div>
-  
+ 
+  <script src="assets/js/showForm.js"></script>
+  <script src="assets/js/showTable.js"></script>
+
 </body>
 </html>
