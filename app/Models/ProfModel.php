@@ -41,7 +41,7 @@ class ProfModel extends Model
      * @param int $moduleID L'ID du module.
      * @return array Liste des noms des filières associées à ce module.
      */
-    public function getFilieresByModule(int $moduleID): array
+    /*public function getFilieresByModule(int $moduleID): array
     {
         $builder = $this->db->table('filieres');
         $builder->select('filieres.FiliereID, filieres.NomFiliere'); // Sélectionner ID et Nom
@@ -51,5 +51,5 @@ class ProfModel extends Model
 
         // Retourner les résultats en tableau associatif
         return $query->getResultArray();
-    }
+    }*/
 }
