@@ -22,13 +22,15 @@
       <li><a href="#"><span><i class="fa-regular fa-user"></i></span> Profile</a></li>
       <li><a href="<?= site_url('Modules') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
       <li><a href="<?= site_url('logout') ?>" id=""><span><i class=""></i></span> Logout</a></li>
-      <li>
+     </ul>
+
   </div>
   <!-- Dashboard -->
   <div class="dashboard" id="dashboard-content">
+
    
+
   </div>
   <script src="assets/js/showTable.js"></script>
-
 </body>
 </html>

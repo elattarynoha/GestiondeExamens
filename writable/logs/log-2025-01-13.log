@@ -1,0 +1,165 @@
+ERROR - 2025-01-13 23:35:14 --> mysqli_sql_exception: Table 'gestionexams.prof_module' doesn't exist in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `modules...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `modules...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `modules...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-13 23:35:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestionexams.prof_module' doesn't exist
+[Method: GET, Route: Modules]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = :Prof_Module.ProfesseurID:', [...], false)
+ 2 APPPATH\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-13 23:35:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestionexams.prof_module' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = :Prof_Module.ProfesseurID:', [...], false)
+ 4 APPPATH\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-13 23:35:15 --> [Caused by] mysqli_sql_exception: Table 'gestionexams.prof_module' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = :Prof_Module.ProfesseurID:', [...], false)
+ 5 APPPATH\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-13 23:35:40 --> mysqli_sql_exception: Table 'gestionexams.prof_module' doesn't exist in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `modules...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `modules...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `modules...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-13 23:35:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestionexams.prof_module' doesn't exist
+[Method: GET, Route: Modules]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = :Prof_Module.ProfesseurID:', [...], false)
+ 2 APPPATH\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-13 23:35:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestionexams.prof_module' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = :Prof_Module.ProfesseurID:', [...], false)
+ 4 APPPATH\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-13 23:35:40 --> [Caused by] mysqli_sql_exception: Table 'gestionexams.prof_module' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `modules`.`ModuleID`, `modules`.`NomModule`
+FROM `modules`
+INNER JOIN `Prof_Module` ON `modules`.`ModuleID` = `Prof_Module`.`ModuleID`
+WHERE `Prof_Module`.`ProfesseurID` = :Prof_Module.ProfesseurID:', [...], false)
+ 5 APPPATH\Models\ProfModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\ModuleController.php(18): App\Models\ProfModel->getModulesByProf(9)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->showModules()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-13 23:50:21 --> Error: Cannot use object of type App\Entities\Users as array
+[Method: POST, Route: SignUp_Process]
+in APPPATH\Controllers\AuthentifController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthentifController->SignUp_Process()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthentifController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

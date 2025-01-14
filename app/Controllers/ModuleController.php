@@ -20,4 +20,11 @@ class ModuleController extends BaseController
         // Passer les modules à la vue TableModule
         return view('TableModule', ['modules' => $LesModules]);
     }
+
+
+    public function load_table_etu()
+    {
+    return view('TableEtu'); // Charge la vue existante TableEtu.php
+    }
+
 }

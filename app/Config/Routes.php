@@ -20,3 +20,8 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/logout', 'AuthentifController::logout');
  // route pour afficher les modules :
 $routes->get('/Modules', 'ModuleController::showModules');  
+
+
+$routes->get('/load_table_etu', 'ModuleController::load_table_etu');
+
+

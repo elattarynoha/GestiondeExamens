@@ -3,22 +3,22 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 use App\Models\AccountModel;
+use App\Entities\Users;
 
-class AuthentifController extends BaseController{
+class AuthentifController extends BaseController {
 
-    public function login(){
-        //Affichage de la page : LOGIN
+    public function login() {
+        // Affichage de la page : LOGIN
         return view('login');
     }
 
-    public function register(){
-        //Affichage de la page : REGISTER
+    public function register() {
+        // Affichage de la page : REGISTER
         return view('register');
     }
 
     // Processus d'inscription
-    public function SignUp_Process()
-    {
+    public function SignUp_Process() {
         $accountmodel = new AccountModel();
         $Usermodel = new UserModel();
     
@@ -42,8 +42,8 @@ class AuthentifController extends BaseController{
     
         // Créer un nouveau compte
         $data_account = [
-            'UserID' => $UserExisting['UserID'],
-            'RoleID' => $UserExisting['RoleID'],
+            'UserID' => $UserExisting->UserID,
+            'RoleID' => $UserExisting->RoleID,
             'AcademicEmail' => $data_register['AcademicEmail'],
             'Password' => password_hash($this->request->getPost('UserPass'), PASSWORD_DEFAULT),
         ];
@@ -91,18 +91,20 @@ class AuthentifController extends BaseController{
     // Mot de passe incorrect
     return redirect()->back()->withInput()->with('general_error', 'Password incorrect! Please try again.');
 }
+
     
     
     //Processus de Logout
     public function logout(){
+
         session()->destroy();
         return redirect()->to('/login');
     }
-        /*
+
+    /*
     // Méthode privée pour valider l'email
-     private function isValidUizEmail($email)
-     {
-         return preg_match('/^[a-zA-Z]+\.[a-zA-Z]+@uiz\.ac\.ma$/', $email);
-     }
-         */
+    private function isValidUizEmail($email) {
+        return preg_match('/^[a-zA-Z]+\.[a-zA-Z]+@uiz\.ac\.ma$/', $email);
+    }
+    */
 }
