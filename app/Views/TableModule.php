@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table des Étudiants</title>
+  <title>Les Modules</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/table.css">
   <link rel="stylesheet" href="assets/css/form.css">
   <style>
-    <style>
+   
 
 /* General styles */
 body {
@@ -157,8 +157,9 @@ cursor: pointer;
 .modify-btn:hover {
 background-color: #2c6cd7;
 }
-</style>
+
   </style>
+
 </head>
 <body>
   <!-- Sidebar -->
@@ -171,8 +172,8 @@ background-color: #2c6cd7;
     <p class="menu-section-title">MENU</p>
     <ul class="menu">
       <li><a href="<?= site_url('ProfDashboard') ?>" class="active"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
-      <li><a href="#"><span><i class="fa-regular fa-user"></i></span> Profile</a></li>
       <li><a href="<?= site_url('Modules') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
+      <li><a href="<?= site_url('load_table_etudiant') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Liste des étudiants</a></li>
       <li><a href="<?= site_url('logout') ?>" id=""><span><i class=""></i></span> Logout</a></li>
       <li>
         <ul class="submenu">
@@ -222,8 +223,7 @@ background-color: #2c6cd7;
       </table>
 
     <?php endif; ?>
-  </div>
-  <div id="note-form" class="form-container" style="display: none;">
+    <div id="note-form" class="form-container" style="display: none;">
     <h3>Saisie de note</h3>
     <form>
         <div>
@@ -248,8 +248,13 @@ background-color: #2c6cd7;
         </div>
     </form>
 </div>
+  </div>
+  
 
 <script src="assets/js/showForm.js"></script>
+
+<script src="assets/js/showTable.js"></script>
+
 
 
 </body>

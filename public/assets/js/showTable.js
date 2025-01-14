@@ -1,42 +1,29 @@
-// Ajouter un gestionnaire d'événement pour le clic sur le lien "IL"
-document.getElementById('show_table_btn').addEventListener('click', function(event) {
-   event.preventDefault(); // Empêcher l'action par défaut du lien
+document.addEventListener("DOMContentLoaded", function () {
+  const showTableBtn = document.getElementById("show_table_btn");
 
-    // Afficher le tableau en modifiant le style du container
-    var tableContainer = document.getElementById('table-container');
-    tableContainer.style.display = 'block'; // Affiche le tableau
-});
-
-
-document.getElementById('show_tableM_btn').addEventListener('click', function(event) {
-    event.preventDefault(); // Empêcher l'action par défaut du lien
-
-    // Afficher le tableau en modifiant le style du container
-    var tableContainer = document.getElementById('table-containerM');
-    tableContainer.style.display = 'block'; // Affiche le tableau
-});
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const showTableMBtn = document.getElementById("show_tableM_btn");
-    const showTableBtn = document.getElementById("show_table_btn");
-    const tableContainerM = document.getElementById("table-containerM");
-    const tableContainer = document.getElementById("table-container");
-
-    showTableMBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      tableContainerM.style.display = "block";
-      tableContainer.style.display = "none";
-    });
-
+  if (showTableBtn) {
     showTableBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      tableContainer.style.display = "block";
-      tableContainerM.style.display = "none";
+      e.preventDefault(); // Empêche le comportement par défaut du lien
+
+      // Envoyer une requête pour charger TableEtu.php
+      fetch('/GestionDeExamens/public/ModuleController/load_table_etu') // Mettez l'URL correcte ici
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Erreur réseau : ' + response.statusText);
+          }
+          return response.text(); // Récupère le contenu HTML
+        })
+        .then(html => {
+          const dashboardContent = document.getElementById("dashboard-content");
+          if (dashboardContent) {
+            dashboardContent.innerHTML = html; // Injecte le contenu HTML
+          } else {
+            console.error("Élément #dashboard-content introuvable.");
+          }
+        })
+        .catch(error => {
+          console.error("Erreur lors du chargement de la table :", error);
+        });
     });
-  });
-
-
-
-
-
+  }
+});

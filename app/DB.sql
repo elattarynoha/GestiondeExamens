@@ -24,18 +24,20 @@ CREATE TABLE accounts (
     FOREIGN KEY (UserID) REFERENCES users(UserID)
 );
 
+
 -- Table des filières
 CREATE TABLE filieres (
     FiliereID INT AUTO_INCREMENT PRIMARY KEY,
-    NomFiliere VARCHAR(100) NOT NULL,
+    NomFiliere VARCHAR(100) NOT NULL
 );
+
 
 
 -- Table des modules
 CREATE TABLE modules (
     ModuleID INT AUTO_INCREMENT PRIMARY KEY,
-    NomModule VARCHAR(100) NOT NULL,
-);
+    NomModule VARCHAR(100) NOT NULL
+
 
 -- Table d'association Filiere_Module (relation plusieurs-à-plusieurs)
 CREATE TABLE Filiere_Module (
@@ -44,13 +46,24 @@ CREATE TABLE Filiere_Module (
     PRIMARY KEY (FiliereID, ModuleID),
     FOREIGN KEY (FiliereID) REFERENCES filieres(FiliereID) ON DELETE CASCADE,
     FOREIGN KEY (ModuleID) REFERENCES modules(ModuleID) ON DELETE CASCADE
+
 );
 
 -- Table pour lier les professeurs aux modules qu'ils enseignent
-CREATE TABLE Professeurs_Modules (
+CREATE TABLE Prof_Module (
     ProfesseurID INT,
     ModuleID INT,
     PRIMARY KEY (ProfesseurID, ModuleID),
     FOREIGN KEY (ProfesseurID) REFERENCES users(UserID) ON DELETE CASCADE,
     FOREIGN KEY (ModuleID) REFERENCES modules(ModuleID) ON DELETE CASCADE
+);
+
+-- Table des notes pour les étudiants
+CREATE TABLE notes (
+    NoteID INT AUTO_INCREMENT PRIMARY KEY,
+    StudentID INT, -- Étudiant identifié par son UserID
+    ModuleID INT,
+    Note DECIMAL(5, 2) CHECK (Note BETWEEN 0 AND 20),
+    FOREIGN KEY (StudentID) REFERENCES users(UserID),
+    FOREIGN KEY (ModuleID) REFERENCES modules(ModuleID)
 );
