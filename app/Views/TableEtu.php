@@ -191,15 +191,15 @@ background-color: #2c6cd7;
     </thead>
     <tbody>
       <tr>
-        <td>Doe</td>
-        <td>John</td>
+        <td>Doezzz</td>
+        <td>Johnhhh</td>
         <td>Design Thinking</td>
         <td>16</td>
         <td><button class="edit-btn" data-id="1">Modifier</button></td>
       </tr>
       <tr>
         <td>Smith</td>
-        <td>Jane</td>
+        <td>Janeeee</td>
         <td>Design Thinking</td>
         <td>16</td>
         <td><button onclick="editStudent(this)">Modifier</button></td>
