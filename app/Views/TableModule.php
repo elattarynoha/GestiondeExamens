@@ -157,7 +157,9 @@ cursor: pointer;
 .modify-btn:hover {
 background-color: #2c6cd7;
 }
-</style>
+
+  </style>
+
 </head>
 <body>
   <!-- Sidebar -->
@@ -170,8 +172,11 @@ background-color: #2c6cd7;
     <p class="menu-section-title">MENU</p>
     <ul class="menu">
       <li><a href="<?= site_url('ProfDashboard') ?>" class="active"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
+
+    
+      <li><a href="#"><span><i class="fa-regular fa-user"></i></span> Profile</a></li>
       <li><a href="<?= site_url('Modules') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
-      <li><a href="<?= site_url('load_table_etu') ?>"><span><i class="fa-solid fa-book"></i></span> Liste des étudiants</a></li>
+
       <li><a href="<?= site_url('logout') ?>" id=""><span><i class=""></i></span> Logout</a></li>
       <li>
         <ul class="submenu">
@@ -250,7 +255,9 @@ background-color: #2c6cd7;
   
 
 <script src="assets/js/showForm.js"></script>
+
 <script src="assets/js/showTable.js"></script>
+
 
 
 </body>

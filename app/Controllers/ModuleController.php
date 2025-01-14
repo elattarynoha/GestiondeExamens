@@ -21,10 +21,10 @@ class ModuleController extends BaseController
         return view('TableModule', ['modules' => $LesModules]);
     }
 
+
     public function load_table_etu()
     {
     return view('TableEtu'); // Charge la vue existante TableEtu.php
     }
-
 
 }

@@ -92,8 +92,11 @@ class AuthentifController extends BaseController {
     return redirect()->back()->withInput()->with('general_error', 'Password incorrect! Please try again.');
 }
 
-    // Processus de Logout
-    public function logout() {
+    
+    
+    //Processus de Logout
+    public function logout(){
+
         session()->destroy();
         return redirect()->to('/login');
     }
