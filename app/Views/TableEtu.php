@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table des Étudiants</title>
+  <title>Etudiant et Notes</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/table.css">
   <link rel="stylesheet" href="assets/css/form.css">
@@ -166,10 +166,10 @@ background-color: #2c6cd7;
     <!-- Menu -->
     <p class="menu-section-title">MENU</p>
     <ul class="menu">
-      <li><a href="<?= site_url('ProfDashboard') ?>" class="active"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
+      <li><a href="<?= site_url('ProfDashboard') ?>"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
       <li><a href="<?= site_url('Modules') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
-      <li><a href="<?= site_url('load_table_etudiant') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Liste des étudiants</a></li>
-      <li><a href="<?= site_url('logout') ?>" id=""><span><i class=""></i></span> Logout</a></li>
+      <li><a href="<?= site_url('load_table_etudiant') ?>" id="" class="active"><span><i class="fa-solid fa-user-graduate"></i></span> Liste des étudiants</a></li>
+      <li><a href="<?= site_url('logout') ?>" id=""><span><i class="fa-solid fa-right-from-bracket"></i></span> Logout</a></li>
       <li>
         <ul class="submenu">
         <li><a href="#" id="show_table_btn">IL</a></li>
@@ -180,57 +180,67 @@ background-color: #2c6cd7;
     </ul>
   </div>
   <div class="dashboard" id="dashboard-content">
+
   <table class="students-table">
     <thead>
-      <tr>
-        <th>Nom</th>
-        <th>Prénom</th>
-        <th>Module</th>
-        <th>Note Finale</th>
-        <th>Actions</th>
-      </tr>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Module</th>
+            <th>Note Finale</th>
+            <th>Actions</th>
+        </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Doe</td>
-        <td>John</td>
-        <td>Design Thinking</td>
-        <td>16</td>
-        <td><button class="modify-btn" data-id="1">Modifier</button></td>
-      </tr>
-      <tr>
-        <td>Smith</td>
-        <td>Jane</td>
-        <td>Design Thinking</td>
-        <td>16</td>
-        <td><button onclick="editStudent(this)">Modifier</button></td>
-      </tr>
+    <?php if (!empty($students)): ?>
+        <?php foreach ($students as $student): ?>
+            <tr>
+                <td><?= esc($student['LastName']) ?></td>
+                <td><?= esc($student['FirstName']) ?></td>
+                <td><?= esc($moduleName) ?></td> <!-- Vous devez définir $moduleName ou l'obtenir dans votre logique -->
+                <td><?= esc($student['Note']) ?></td>
+                <td><button class="modify-btn" data-id="1">Modifier</button></td>
+            </tr>
+        <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        <?php endif; ?>
     </tbody>
-  </table>
-
-    
+</table>
     <div id="note-form" class="form-container" style="display: none;">
     <h3>Saisie de note</h3>
-    <form>
+    <form method="POST" action="updateNote">
         <div>
+        <?php if (!empty($students)): ?>
             <label for="student-name">Nom</label>
-            <input type="text" id="student-name" name="student-name" readonly>
+            <input type="text" id="student-name" name="student-name" readonly value="<?= esc($student['LastName']) ?>">
         </div>
         <div>
             <label for="student-firstname">Prénom</label>
-            <input type="text" id="student-firstname" name="student-firstname" readonly>
+            <input type="text" id="student-firstname" name="student-firstname" readonly value="<?= esc($student['FirstName']) ?>">
         </div>
+       
         <div>
             <label for="module-name">Module</label>
-            <input type="text" id="module-name" name="module-name" readonly>
-        </div>
+            <input type="text" id="" name="module-name" readonly value="<?= esc($moduleName) ?>">
+    </div>
+
         <div>
             <label for="final-grade">Note Finale</label>
-            <input type="number" id="final-grade" name="final-grade" min="0" max="20" required>
+            <input type="number" id="final-grade" name="final-grade" min="0" max="20" required value="<?= esc($student['Note']) ?>">
+
+            <?php endif; ?>
         </div>
         <div>
             <button type="submit" class="submit-btn">Enregistrer</button>
             <button type="button" class="cancel-btn">Annuler</button>
+           
         </div>
     </form>
 </div>
