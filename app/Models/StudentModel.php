@@ -29,11 +29,24 @@ class StudentModel extends Model
         $builder->select('UserID');
         $builder->where('FirstName', $firstName);
         $builder->where('LastName', $lastName);
-        $builder->where('RoleID', 3); // Supposons que 3 correspond au rôle "étudiant"
+        $builder->where('RoleID', 1); 
 
         $query = $builder->get();
         $result = $query->getRow();
 
         return $result ? $result->UserID : null;
     }
+    // Dans le modèle NoteModel ou StudentModel
+    public function getStudentsWithNotes(int $moduleID)
+    {
+        $builder = $this->db->table('notes');
+        $builder->select('notes.Note, users.FirstName, users.LastName, modules.NomModule');
+        $builder->join('users', 'users.UserID = notes.StudentID');
+        $builder->join('modules', 'modules.ModuleID = notes.ModuleID');
+        $builder->where('notes.ModuleID', $moduleID);
+        $query = $builder->get();
+
+        return $query->getResultArray(); // Retourne les résultats
+    }
+
 }

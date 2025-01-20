@@ -1,0 +1,1564 @@
+CRITICAL - 2025-01-15 00:04:53 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 194.
+ 1 APPPATH\Views\TableEtu.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 194)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:05:03 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 194.
+ 1 APPPATH\Views\TableEtu.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 194)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:10:20 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 243.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 3 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:46:56 --> ParseError: syntax error, unexpected namespaced name "App\Controllers"
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\StudentController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StudentController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StudentController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\StudentController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:53:02 --> Error: Class "App\Controllers\ModuleModel" not found
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:53:15 --> Error: Class "App\Controllers\ModuleModel" not found
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:53:53 --> Error: Class "App\Controllers\ProfModel" not found
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 00:54:21 --> mysqli_sql_exception: Unknown column 'ModuleName' in 'where clause' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\GestionDeExamens\app\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation P...')
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#9 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#10 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-15 00:54:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ModuleName' in 'where clause'
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = :ModuleName:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:54:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ModuleName' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = :ModuleName:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:54:21 --> [Caused by] mysqli_sql_exception: Unknown column 'ModuleName' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = \'Programmation Python Avancée\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `ModuleName` = :ModuleName:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 00:55:19 --> mysqli_sql_exception: Unknown column 'NomModule' in 'where clause' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\GestionDeExamens\app\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation P...')
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#9 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#10 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-15 00:55:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'NomModule' in 'where clause'
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = :NomModule:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:55:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'NomModule' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = :NomModule:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:55:19 --> [Caused by] mysqli_sql_exception: Unknown column 'NomModule' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = :NomModule:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 00:55:32 --> mysqli_sql_exception: Unknown column 'NomModule' in 'where clause' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\GestionDeExamens\app\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation P...')
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#9 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#10 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-15 00:55:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'NomModule' in 'where clause'
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = :NomModule:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:55:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'NomModule' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = :NomModule:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 00:55:32 --> [Caused by] mysqli_sql_exception: Unknown column 'NomModule' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = \'Programmation Python Avancée\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Prof_Module`
+WHERE `NomModule` = :NomModule:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\ProfModel.php(40): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\StudentController.php(21): App\Models\ProfModel->getModuleByName('Programmation Python Avancée')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:06:19 --> RuntimeException: This Student doesn"t exist.
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 41.
+ 1 APPPATH\Controllers\StudentController.php(32): App\Models\NoteModel->addNoteByStudentName('Hassan', 'Dahibi', 2, 15.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:07:27 --> RuntimeException: This Student doesn"t exist.
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 41.
+ 1 APPPATH\Controllers\StudentController.php(32): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 2, 15.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:17:00 --> RuntimeException: This Student doesn"t exist.
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 41.
+ 1 APPPATH\Controllers\StudentController.php(32): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 2, 15.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:18:21 --> TypeError: App\Models\NoteModel::addNoteByStudentName(): Argument #3 ($moduleID) must be of type int, string given, called in C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php on line 31
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 29.
+ 1 APPPATH\Controllers\StudentController.php(31): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:19:33 --> RuntimeException: This Student doesn"t exist.
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 41.
+ 1 APPPATH\Controllers\StudentController.php(31): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:20:18 --> RuntimeException: This Student doesn"t exist.
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 41.
+ 1 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 01:25:19 --> mysqli_sql_exception: Unknown column 'EtudiantID' in 'field list' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\GestionDeExamens\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\GestionDeExamens\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+#8 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation P...', 15.0)
+#9 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#10 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#11 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-01-15 01:25:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'EtudiantID' in 'field list'
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (:EtudiantID:, :ModuleID:, :Note:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+ 6 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:25:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'EtudiantID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (NULL, \'Programmation Python Avancée\', 15)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (NULL, \'Programmation Python Avancée\', 15)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (:EtudiantID:, :ModuleID:, :Note:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+ 8 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:25:19 --> [Caused by] mysqli_sql_exception: Unknown column 'EtudiantID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (NULL, \'Programmation Python Avancée\', 15)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (NULL, \'Programmation Python Avancée\', 15)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (NULL, \'Programmation Python Avancée\', 15)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notes` (`EtudiantID`, `ModuleID`, `Note`) VALUES (:EtudiantID:, :ModuleID:, :Note:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+ 9 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 01:29:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestionexams`.`notes`, CONSTRAINT `notes_ibfk_2` FOREIGN KEY (`ModuleID`) REFERENCES `modules` (`ModuleID`)) in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\GestionDeExamens\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\GestionDeExamens\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+#8 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation P...', 15.0)
+#9 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#10 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#11 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-01-15 01:29:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestionexams`.`notes`, CONSTRAINT `notes_ibfk_2` FOREIGN KEY (`ModuleID`) REFERENCES `modules` (`ModuleID`))
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (:ModuleID:, :Note:, :StudentID:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+ 6 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:29:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestionexams`.`notes`, CONSTRAINT `notes_ibfk_2` FOREIGN KEY (`ModuleID`) REFERENCES `modules` (`ModuleID`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (\'Programmation Python Avancée\', 15, 8)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (\'Programmation Python Avancée\', 15, 8)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (:ModuleID:, :Note:, :StudentID:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+ 8 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:29:11 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestionexams`.`notes`, CONSTRAINT `notes_ibfk_2` FOREIGN KEY (`ModuleID`) REFERENCES `modules` (`ModuleID`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (\'Programmation Python Avancée\', 15, 8)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (\'Programmation Python Avancée\', 15, 8)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (\'Programmation Python Avancée\', 15, 8)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notes` (`ModuleID`, `Note`, `StudentID`) VALUES (:ModuleID:, :Note:, :StudentID:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\NoteModel.php(51): CodeIgniter\Model->insert(Object(App\Entities\Notes))
+ 9 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:31:14 --> TypeError: App\Models\NoteModel::addNoteByStudentName(): Argument #3 ($moduleID) must be of type int, string given, called in C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php on line 30
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 29.
+ 1 APPPATH\Controllers\StudentController.php(30): App\Models\NoteModel->addNoteByStudentName('Rida', 'Assil', 'Programmation Python Avancée', 15.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:31:51 --> BadMethodCallException: Call to undefined method App\Models\StudentModel::getStudentsWithNotes
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\StudentController.php(34): CodeIgniter\Model->__call('getStudentsWithNotes', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 01:34:18 --> mysqli_sql_exception: Unknown column 'modules.ModuleName' in 'field list' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `notes`....', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`....')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`....')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`....', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 01:34:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'modules.ModuleName' in 'field list'
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 2 APPPATH\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:34:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'modules.ModuleName' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 4 APPPATH\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:34:18 --> [Caused by] mysqli_sql_exception: Unknown column 'modules.ModuleName' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`ModuleName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 5 APPPATH\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 01:34:41 --> mysqli_sql_exception: Unknown column 'notes.EtudiantID' in 'on clause' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `notes`....', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`....')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`....')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`....', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 01:34:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'notes.EtudiantID' in 'on clause'
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 2 APPPATH\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:34:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'notes.EtudiantID' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 4 APPPATH\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:34:41 --> [Caused by] mysqli_sql_exception: Unknown column 'notes.EtudiantID' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 5 APPPATH\Models\StudentModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(34): App\Models\StudentModel->getStudentsWithNotes(2)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:39:02 --> Error: Call to undefined function App\Controllers\getStudents()
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:40:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "load_table_etudiant.php"
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('load_table_etudiant.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('load_table_etudiant', [], true)
+ 3 APPPATH\Controllers\StudentController.php(37): view('load_table_etudiant', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 01:41:24 --> mysqli_sql_exception: Unknown column 'notes.EtudiantID' in 'on clause' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `notes`....', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`....')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`....')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`....', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(35): App\Models\NoteModel->getNotesWithStudentInfo(2)
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 01:41:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'notes.EtudiantID' in 'on clause'
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 2 APPPATH\Models\NoteModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(35): App\Models\NoteModel->getNotesWithStudentInfo(2)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:41:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'notes.EtudiantID' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = 2')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = 2')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 4 APPPATH\Models\NoteModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(35): App\Models\NoteModel->getNotesWithStudentInfo(2)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:41:24 --> [Caused by] mysqli_sql_exception: Unknown column 'notes.EtudiantID' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `notes`.`Note`, `users`.`FirstName`, `users`.`LastName`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`EtudiantID`
+WHERE `notes`.`ModuleID` = :notes.ModuleID:', [...], false)
+ 5 APPPATH\Models\NoteModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(35): App\Models\NoteModel->getNotesWithStudentInfo(2)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:44:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "load_table_etudiant.php"
+[Method: POST, Route: Add_note_student]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('load_table_etudiant.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('load_table_etudiant', [], true)
+ 3 APPPATH\Controllers\StudentController.php(38): view('load_table_etudiant', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:46:01 --> ParseError: syntax error, unexpected token "endif", expecting end of file
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 209.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 3 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:46:15 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 195.
+ 1 APPPATH\Views\TableEtu.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 195)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:54:23 --> ParseError: syntax error, unexpected token "<", expecting "function" or "const"
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\StudentController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StudentController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StudentController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\StudentController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:55:21 --> ParseError: Unmatched '}'
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\StudentController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StudentController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StudentController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\StudentController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 01:55:33 --> RuntimeException: This Student doesn"t exist.
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 41.
+ 1 APPPATH\Controllers\StudentController.php(32): App\Models\NoteModel->addNoteByStudentName('Hassan', 'Dahibi', 2, 16.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 02:00:35 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 195.
+ 1 APPPATH\Views\TableEtu.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 195)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:22:50 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 210.
+ 1 APPPATH\Views\TableEtu.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 210)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:23:24 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 211.
+ 1 APPPATH\Views\TableEtu.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\ModuleController.php(27): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModuleController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModuleController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:28:36 --> ParseError: syntax error, unexpected single-quoted string "ModuleID", expecting identifier or variable or "{" or "$"
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Controllers\StudentController.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\StudentController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StudentController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StudentController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\StudentController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:29:55 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 211.
+ 1 APPPATH\Views\TableEtu.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\StudentController.php(13): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:31:24 --> ErrorException: Undefined variable $students
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 208.
+ 1 APPPATH\Views\TableEtu.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 208)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\StudentController.php(13): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:31:43 --> ErrorException: Undefined variable $student
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 214.
+ 1 APPPATH\Views\TableEtu.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $student', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 214)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\StudentController.php(13): view('TableEtu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:39:51 --> ParseError: Unclosed '{' on line 61 does not match ')'
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 65.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Models\\NoteModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\NoteModel')
+ 3 APPPATH\Controllers\StudentController.php(32): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\NoteModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:40:27 --> ParseError: Unclosed '{' on line 61 does not match ')'
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 65.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Models\\NoteModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\NoteModel')
+ 3 APPPATH\Controllers\StudentController.php(32): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\NoteModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:41:39 --> TypeError: App\Models\NoteModel::addNoteByStudentName(): Argument #3 ($moduleID) must be of type int, array given, called in C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php on line 33
+[Method: POST, Route: Add_note_student]
+in APPPATH\Models\NoteModel.php on line 29.
+ 1 APPPATH\Controllers\StudentController.php(33): App\Models\NoteModel->addNoteByStudentName('Adam', 'Adil', [...], 12.0)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:44:07 --> ErrorException: Undefined variable $moduleName
+[Method: POST, Route: Add_note_student]
+in APPPATH\Views\TableEtu.php on line 200.
+ 1 APPPATH\Views\TableEtu.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $moduleName', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 200)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\StudentController.php(40): view('TableEtu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:45:37 --> ErrorException: Undefined variable $module
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 40.
+ 1 APPPATH\Controllers\StudentController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $module', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\StudentController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->addNote()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 13:50:21 --> ParseError: Unclosed '[' does not match ')'
+[Method: POST, Route: Add_note_student]
+in APPPATH\Controllers\StudentController.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\StudentController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StudentController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StudentController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\StudentController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 14:08:51 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 205.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 3 APPPATH\Controllers\StudentController.php(17): view('TableEtu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 20:38:56 --> BadMethodCallException: Call to undefined method App\Models\NoteModel::getAllNotesWithStudentInfo
+[Method: GET, Route: load_table_etudiant]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\StudentController.php(15): CodeIgniter\Model->__call('getAllNotesWithStudentInfo', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 20:55:14 --> BadMethodCallException: Call to undefined method App\Models\NoteModel::getNotesByProfAndModule
+[Method: GET, Route: load_table_etudiant]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\StudentController.php(17): CodeIgniter\Model->__call('getNotesByProfAndModule', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 20:56:30 --> mysqli_sql_exception: Unknown column 'modules.ProfID' in 'where clause' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(NULL, NULL)
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 20:56:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'modules.ProfID' in 'where clause'
+[Method: GET, Route: load_table_etudiant]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL', [], false)
+ 2 APPPATH\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 20:56:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'modules.ProfID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL', [], false)
+ 4 APPPATH\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 20:56:30 --> [Caused by] mysqli_sql_exception: Unknown column 'modules.ProfID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `modules`.`ProfID` IS NULL
+AND `modules`.`ModuleID` IS NULL', [], false)
+ 5 APPPATH\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 20:59:05 --> mysqli_sql_exception: Unknown column 'prof_module.ProfesseurID' in 'where clause' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(NULL, NULL)
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 20:59:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'prof_module.ProfesseurID' in 'where clause'
+[Method: GET, Route: load_table_etudiant]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL', [], false)
+ 2 APPPATH\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 20:59:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'prof_module.ProfesseurID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL', [], false)
+ 4 APPPATH\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 20:59:05 --> [Caused by] mysqli_sql_exception: Unknown column 'prof_module.ProfesseurID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `notes`.`Note`, `modules`.`NomModule`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+WHERE `prof_module`.`ProfesseurID` IS NULL
+AND `prof_module`.`ModuleID` IS NULL', [], false)
+ 5 APPPATH\Models\NoteModel.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getNotesByProfAndModule(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 21:04:53 --> mysqli_sql_exception: Table 'gestionexams.students' doesn't exist in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `student...', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `student...')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 21:04:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestionexams.students' doesn't exist
+[Method: GET, Route: load_table_etudiant]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', [], false)
+ 2 APPPATH\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:04:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestionexams.students' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', [], false)
+ 4 APPPATH\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:04:53 --> [Caused by] mysqli_sql_exception: Table 'gestionexams.students' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`LastName`, `students`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `students` ON `students`.`StudentID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', [], false)
+ 5 APPPATH\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 21:07:17 --> mysqli_sql_exception: Unknown column 'modules.ModuleName' in 'field list' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 21:07:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'modules.ModuleName' in 'field list'
+[Method: GET, Route: load_table_etudiant]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', [], false)
+ 2 APPPATH\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:07:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'modules.ModuleName' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', [], false)
+ 4 APPPATH\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:07:17 --> [Caused by] mysqli_sql_exception: Unknown column 'modules.ModuleName' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`ModuleName`, `notes`.`Note`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`', [], false)
+ 5 APPPATH\Models\NoteModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(14): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:17:47 --> ErrorException: Array to string conversion
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Views\TableEtu.php on line 200.
+ 1 APPPATH\Views\TableEtu.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php', 200)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\GestionDeExamens\\app\\Views\\TableEtu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('TableEtu', [], true)
+ 5 APPPATH\Controllers\StudentController.php(20): view('TableEtu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:18:23 --> TypeError: App\Models\ProfModel::getModulesByProfForNotes(): Return value must be of type array, string returned
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Models\ProfModel.php on line 42.
+ 1 APPPATH\Controllers\StudentController.php(18): App\Models\ProfModel->getModulesByProfForNotes(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:35:40 --> TypeError: App\Models\ProfModel::getModulesByProf(): Argument #1 ($professeurID) must be of type int, null given, called in C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php on line 18
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Models\ProfModel.php on line 20.
+ 1 APPPATH\Controllers\StudentController.php(18): App\Models\ProfModel->getModulesByProf(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-15 21:36:08 --> mysqli_sql_exception: Unknown column 'prof_module.professeur_ID' in 'field list' in C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\GestionDeExamens\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`....', 0)
+#1 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\xampp\htdocs\GestionDeExamens\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\GestionDeExamens\app\Models\NoteModel.php(67): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GestionDeExamens\app\Controllers\StudentController.php(17): App\Models\NoteModel->getAllNotesWithStudentInfo()
+#6 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+#7 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#8 C:\xampp\htdocs\GestionDeExamens\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GestionDeExamens\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\GestionDeExamens\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-15 21:36:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'prof_module.professeur_ID' in 'field list'
+[Method: GET, Route: load_table_etudiant]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`', [], false)
+ 2 APPPATH\Models\NoteModel.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:36:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'prof_module.professeur_ID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`', [], false)
+ 4 APPPATH\Models\NoteModel.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:36:08 --> [Caused by] mysqli_sql_exception: Unknown column 'prof_module.professeur_ID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`LastName`, `users`.`FirstName`, `modules`.`NomModule`, `notes`.`Note`, `prof_module`.`professeur_ID`
+FROM `notes`
+JOIN `users` ON `users`.`UserID` = `notes`.`StudentID`
+JOIN `modules` ON `modules`.`ModuleID` = `notes`.`ModuleID`
+JOIN `prof_module` ON `prof_module`.`ModuleID` = `modules`.`ModuleID`', [], false)
+ 5 APPPATH\Models\NoteModel.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\StudentController.php(17): App\Models\NoteModel->getAllNotesWithStudentInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-15 21:51:31 --> ErrorException: Attempt to read property "NomModule" on string
+[Method: GET, Route: load_table_etudiant]
+in APPPATH\Controllers\StudentController.php on line 19.
+ 1 APPPATH\Controllers\StudentController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "NomModule" on string', 'C:\\xampp\\htdocs\\GestionDeExamens\\app\\Controllers\\StudentController.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StudentController->load_table_etu()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

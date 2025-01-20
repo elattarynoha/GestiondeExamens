@@ -18,10 +18,17 @@ use CodeIgniter\Router\RouteCollection;
  
  // La route pour se déconnecter
  $routes->get('/logout', 'AuthentifController::logout');
+
  // route pour afficher les modules :
 $routes->get('/Modules', 'ModuleController::showModules');  
 
+ // route pour afficher la table des étudiants avec leurs notes :
+$routes->get('/load_table_etudiant', 'StudentController::load_table_etu');
 
-$routes->get('/load_table_etudiant', 'ModuleController::load_table_etu');
+// Traitement d'ajout de notes pour chaque étudiant selon le module associé :
+$routes->post('/Add_note_student', 'StudentController::addNote');
+
+// Traitement de modification de notes pour chaque étudiant selon le module associé :
+$routes->post('/updateNote', 'StudentController::updateNote');
 
 

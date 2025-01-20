@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les Modules</title>
+  <title>Les modules</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/table.css">
   <link rel="stylesheet" href="assets/css/form.css">
@@ -157,9 +157,8 @@ cursor: pointer;
 .modify-btn:hover {
 background-color: #2c6cd7;
 }
-
+</style>
   </style>
-
 </head>
 <body>
   <!-- Sidebar -->
@@ -171,10 +170,10 @@ background-color: #2c6cd7;
     <!-- Menu -->
     <p class="menu-section-title">MENU</p>
     <ul class="menu">
-      <li><a href="<?= site_url('ProfDashboard') ?>" class="active"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
-      <li><a href="<?= site_url('Modules') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
-      <li><a href="<?= site_url('load_table_etudiant') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Liste des étudiants</a></li>
-      <li><a href="<?= site_url('logout') ?>" id=""><span><i class=""></i></span> Logout</a></li>
+    <li><a href="<?= site_url('ProfDashboard') ?>"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
+      <li><a href="<?= site_url('Modules') ?>" id=""><span><i class="fa-solid fa-book" class="active"></i></span> Modules</a></li>
+      <li><a href="<?= site_url('load_table_etudiant') ?>" id=""><span><i class="fa-solid fa-user-graduate"></i></span> Liste des étudiants</a></li>
+      <li><a href="<?= site_url('logout') ?>" id=""><span><i class="fa-solid fa-right-from-bracket"></i></span> Logout</a></li>
       <li>
         <ul class="submenu">
         <li><a href="#" id="show_table_btn">IL</a></li>
@@ -200,7 +199,7 @@ background-color: #2c6cd7;
           <?php foreach ($modules as $module): ?>
             <tr>
               <td><?= esc($module['NomModule']) ?></td>
-              <td><button class="modify-btn">Saisie de note</button></td>
+              <td><button class="modify-btn" data-module="<?= esc($module['NomModule']) ?>">Saisie de note</button></td>
             </tr>
           <?php endforeach; ?>
         </tbody>
@@ -225,7 +224,7 @@ background-color: #2c6cd7;
     <?php endif; ?>
     <div id="note-form" class="form-container" style="display: none;">
     <h3>Saisie de note</h3>
-    <form>
+    <form action = "Add_note_student" method = "POST" >
         <div>
             <label for="student-name">Nom</label>
             <input type="text" id="student-name" name="student-name" required>
@@ -252,9 +251,6 @@ background-color: #2c6cd7;
   
 
 <script src="assets/js/showForm.js"></script>
-
-<script src="assets/js/showTable.js"></script>
-
 
 
 </body>

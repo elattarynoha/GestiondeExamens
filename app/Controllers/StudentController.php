@@ -1,44 +1,78 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controllers;
 
-class StudentController extends BaseController{
+use App\Models\NoteModel;
+use App\Models\StudentModel;
+use App\Models\ProfModel;
 
-    //Affiche la liste des étudiants pour une filière et un module donnés
-    public function afficherEtudiants($filiereID, $moduleID)
-    {
-        $studentModel = new StudentModel();
-        $students = $studentModel->getStudentsByFiliereAndModule($filiereID, $moduleID);
+    
+    class StudentController extends BaseController {
+        public function load_table_etu()
+        {
+           $profID = session()->get('user')['UserID'];
 
-        // Charger la vue avec les données des étudiants
-        return view('etudiants/liste', [
-            'students' => $students,
-            'filiereID' => $filiereID,
-            'moduleID' => $moduleID,
-        ]);
-    }
-    public function updateNote()
-    {
-        $notesModel = new NotesModel();
+            $profModel = new ProfModel();
+            $noteModel = new NoteModel();
+            $students = $noteModel->getAllNotesWithStudentInfo(); 
+            $moduleName = $profModel->getModulesByProfForNotes($profID);
 
-        $etudiantID = $this->request->getPost('StudentID');
-        $moduleID = $this->request->getPost('ModuleID');
-        $noteProject = $this->request->getPost('NoteProject');
-        $noteCTR = $this->request->getPost('NoteCTR');
-        $noteExamFinal = $this->request->getPost('NoteExamFinal');
-
-        // Vérifie si une note existe déjà pour cet étudiant et ce module
-        $existingNote = $notesModel->getNotesByStudentAndModule($etudiantID, $moduleID);
-
-        if ($existingNote) {
-            // Met à jour les notes
-            $notesModel->updateNotes($etudiantID, $moduleID, $noteProject, $noteCTR, $noteExamFinal);
-        } else {
-            // Insère une nouvelle note
-            $notesModel->addNotes($etudiantID, $moduleID, $noteProject, $noteCTR, $noteExamFinal);
+            return view('TableEtu', ['students' => $students, 'moduleName' => $moduleName]);
         }
+        
+        public function addNote() {
+            // Récupérer les données du formulaire
+            $firstName = $this->request->getPost('student-firstname');
+            $lastName = $this->request->getPost('student-name');
+            $moduleName = $this->request->getPost('module-name');
+            $note = (float)$this->request->getPost('final-grade');
 
-        // Redirection avec un message de succès
-        return redirect()->back()->with('success', 'Les notes ont été mises à jour avec succès.');
+            $moduleModel = new ProfModel();
+            $moduleID = $moduleModel->getModuleByName($moduleName); 
+    
+            if (!$moduleID) {
+                // Si le module n'existe pas, afficher un message d'erreur
+                return redirect()->back()->with('error', 'Le module n\'existe pas.');
+            }
+            // Ajouter la note via le modèle NoteModel
+            $noteModel = new NoteModel();
+            $noteModel->addNoteByStudentName($firstName, $lastName, $moduleID, $note);
+            return redirect()->to('/load_table_etudiant');
+        }
+        
+        public function updateNote()
+{
+    // Récupérer les données du formulaire
+    $firstName = $this->request->getPost('student-firstname');
+    $lastName = $this->request->getPost('student-name');
+    $moduleName = $this->request->getPost('module-name');
+    $newNote = (float)$this->request->getPost('final-grade');
+
+    // Instancier le modèle ProfModel pour récupérer l'ID du module
+    $moduleModel = new ProfModel();
+    $moduleID = $moduleModel->getModuleByName($moduleName); 
+
+    if (!$moduleID) {
+        // Si le module n'existe pas, afficher un message d'erreur
+        return redirect()->back()->with('error', 'Le module n\'existe pas.');
+    }
+
+    // Instancier le modèle NoteModel pour mettre à jour la note
+    $noteModel = new NoteModel();
+    try {
+        // Appeler la méthode pour mettre à jour la note
+        $updated = $noteModel->updateNoteByName($firstName, $lastName, $moduleID, $newNote);
+        
+        if ($updated) {
+            return redirect()->to('/load_table_etudiant')->with('success', 'Note mise à jour avec succès.');
+        } else {
+            return redirect()->back()->with('error', 'La mise à jour a échoué.');
+        }
+    } catch (\InvalidArgumentException $e) {
+        return redirect()->back()->with('error', $e->getMessage());
     }
 }
+
+    
+    }
+    

@@ -20,8 +20,8 @@
     <ul class="menu">
       <li><a href="<?= site_url('ProfDashboard') ?>" class="active"><span><i class="fa-solid fa-chart-line"></i></span> Dashboard</a></li>
       <li><a href="<?= site_url('Modules') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Modules</a></li>
-      <li><a href="<?= site_url('load_table_etudiant') ?>" id=""><span><i class="fa-solid fa-book"></i></span> Liste des étudiants</a></li>
-      <li><a href="<?= site_url('logout') ?>" id=""><span><i class=""></i></span> Logout</a></li>
+      <li><a href="<?= site_url('load_table_etudiant') ?>" id=""><span><i class="fa-solid fa-user-graduate"></i></span> Liste des étudiants</a></li>
+      <li><a href="<?= site_url('logout') ?>" id=""><span><i class="fa-solid fa-right-from-bracket"></i></span> Logout</a></li>
      </ul>
 
   </div>

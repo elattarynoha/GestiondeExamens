@@ -10,7 +10,7 @@ class NoteModel extends Model
     protected $table = 'notes';                 // Table des notes
     protected $primaryKey = 'NoteID';           // Clé primaire
     protected $returnType = Notes::class;       // Retourne une entité Notes
-    protected $allowedFields = ['EtudiantID', 'ModuleID', 'Note']; // Champs modifiables
+    protected $allowedFields = ['StudentID', 'ModuleID', 'Note']; // Champs modifiables
 
     public function __construct()
     {
@@ -57,15 +57,27 @@ class NoteModel extends Model
      * @param int $moduleID L'ID du module pour lequel les notes doivent être récupérées.
      * @return array Liste des notes avec les informations des étudiants (nom, prénom, note).
      */
-    public function getNotesWithStudentInfo(int $moduleID): array
+    public function getAllNotesWithStudentInfo(): array
     {
-        // Charger le modèle StudentModel
-        $studentModel = new StudentModel();
+        $builder = $this->db->table('notes');
+        $builder->select('users.LastName, users.FirstName, modules.NomModule, notes.Note, prof_module.ProfesseurID');
+        $builder->join('users', 'users.UserID = notes.StudentID');
+        $builder->join('modules', 'modules.ModuleID = notes.ModuleID');
+        $builder->join('prof_module', 'prof_module.ModuleID = modules.ModuleID'); // Ajout de la jointure avec prof_module
+        $query = $builder->get();
+        return $query->getResultArray();
+    }
+    
+    
+    
+
+        /*
+        L'ancienne version de la fonction getNotesWithStudentInfo a été éliminé :
 
         // Récupérer les notes pour un module donné
         $builder = $this->db->table('notes');
         $builder->select('notes.Note, users.FirstName, users.LastName');
-        $builder->join('users', 'users.UserID = notes.EtudiantID');
+        $builder->join('users', 'users.UserID = notes.StudentID');
         $builder->where('notes.ModuleID', $moduleID);
         $query = $builder->get();
 
@@ -83,8 +95,8 @@ class NoteModel extends Model
             ];
         }
 
-        return $notesWithStudentInfo;
-    }
+        return $notesWithStudentInfo;*/
+   
   
 
         /**
@@ -111,17 +123,10 @@ class NoteModel extends Model
             if ($etudiantID !== null) {
                 // Vérifier si la note existe déjà pour cet étudiant et module
                 $builder = $this->db->table('notes');
-                $builder->where('EtudiantID', $etudiantID);
+                $builder->where('StudentID', $etudiantID);
                 $builder->where('ModuleID', $moduleID);
-                $query = $builder->get();
-    
-                // Si la note existe, on la met à jour
-                if ($query->getNumRows() > 0) {
-                    return $this->update(
-                        ['EtudiantID' => $etudiantID, 'ModuleID' => $moduleID],  // Clé primaire
-                        ['Note' => $newNote]   // Valeur à mettre à jour
-                    );
-                }
+                $result = $builder->update(['Note' => $newNote]);
+
             }
     
             return false; // Si l'étudiant n'existe pas, retour faux
